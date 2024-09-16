@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE1E1"
+    tools:context=".calculator.Calculator">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULATOR WITH OOP"
+            android:textSize="30sp"
+            android:layout_marginVertical="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_text_first_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="Enter First Number"
+            />
+
+        <EditText
+            android:id="@+id/edit_text_second_num"
+            android:layout_marginVertical="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="Enter Second Number"
+            />
+
+        <EditText
+            android:id="@+id/edit_text_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="Enter Operation"
+            />
+
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTRUCTION "
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 - ADDITION \n 2 - SUBTRACTION \n 3 - MULTIPLICATION \n 4 - DIVISION"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/text_view_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANSWER: "
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SUBMIT"
+        android:backgroundTint="#6100FF"
+        android:layout_margin="20dp"
+        />
+
+</RelativeLayout>
